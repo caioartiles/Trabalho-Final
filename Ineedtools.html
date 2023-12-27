@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT.IT</title>
+    
+    <style>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .bounce-dot {
+            color: #ff6a00;
+            animation: bounce 2s infinite;
+            display: inline-block; 
+            text-shadow: 0 0 10px rgba(255, 106, 0, 0.8); 
+        }
+        body{
+            height: 100vh; 
+            background: linear-gradient(to bottom, #FF0000, #800080); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center}
+
+
+        h1{ 
+            font-size: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: Verdana, sans-serif;
+            margin-top: 50px;
+        }
+
+        h1 a{
+            text-decoration: none !important 
+        }
+            .barra-pesquisa {
+            width: 80%;
+            max-width: 400px;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9)}
+
+        .SoundEffects{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)}    
+            
+           .SoundEffects:hover{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;}
+
+            .Transitions{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)}    
+            
+           .Transitions:hover{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;}
+
+            .Texture{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)}    
+            
+           .Texture:hover{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;}
+
+            .LUTs{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)}    
+            
+           .LUTs:hover{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;}
+
+            .Effects{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)}    
+            
+           .Effects:hover{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;}
+
+            .SoundsTransitions{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)}    
+            
+           .SoundsTransitions:hover{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;}
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+            
+            alert('A aba "sound effects" está disponível para visualização (:');
+        });
+</script>
+
+</head>
+<body>
+    <div>
+        
+        <h1> EDIT<span class="bounce-dot">.</span>IT </h1>
+      
+    </div>
+
+<input type="text" class="barra-pesquisa" placeholder="Search">
+
+   <div class="Botoes">
+    <a href="SoundEffects.html">
+    <button class="SoundEffects" type="button"> 
+        Sound Effects
+    </button>
+    </a>
+    <a href="">
+    <button class="Transitions" type="button"> 
+        Transitions
+    </button>
+    </a>
+    <a href="">
+        <button class="Texture" type="button"> 
+            Texture
+        </button>
+        </a>
+        <a href="">
+            <button class="LUTs" type="button"> 
+                LUTs
+            </button>
+            </a>
+            <a href="">
+                <button class="Effects" type="button"> 
+                 Effects
+                </button>
+                </a>
+                <a href="">
+                    <button class="SoundsTransitions" type="button"> 
+                Sounds Transitions
+                    </button>
+                    </a>
+</div>
+</body>
+</html>

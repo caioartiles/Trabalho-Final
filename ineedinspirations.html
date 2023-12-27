@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT.IT</title>
+    
+    <style>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .bounce-dot {
+            color: #ff6a00;
+            animation: bounce 2s infinite;
+            display: inline-block; 
+            text-shadow: 0 0 10px rgba(255, 106, 0, 0.8); 
+        }
+        body{
+            height: 100vh; 
+            background: linear-gradient(to bottom, #FF0000, #800080); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center}
+
+
+        h1{ 
+            font-size: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: Verdana, sans-serif;
+            margin-top: 50px;
+        }
+            .barra-pesquisa {
+            width: 80%;
+            max-width: 400px;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9)}
+
+        .ReelsTiktok{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)}    
+            
+           .ReelsTiktok:hover{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;}
+
+            .Videoclipe{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)}    
+            
+           .Videoclipe:hover{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;}
+
+            .Youtube{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)}    
+            
+           .Youtube:hover{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;}
+
+            .Concerts{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)}    
+            
+           .Concerts:hover{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;}
+
+            .Series{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)}    
+            
+           .Series:hover{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;}
+
+            .Documentary{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)}    
+            
+           .Documentary:hover{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 30%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 30px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 25vh;
+            font-family: 'Courier New', monospace;}
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+            
+            alert('A aba "Tiktok/Reels" está disponível para visualização (:');
+        });
+</script>
+
+</head>
+<body>
+<div>
+    
+    <h1> EDIT <span class="bounce-dot">.</span>IT </h1>
+    
+</div>
+
+<input type="text" class="barra-pesquisa" placeholder="Search">
+
+   <div class="Botoes">
+    <a href="tiktokreels.html">
+    <button class="ReelsTiktok" type="button"> 
+        Reels/Tiktok
+    </button>
+    </a>
+    <a href="">
+    <button class="Videoclipe" type="button"> 
+        Video Clip
+    </button>
+    </a>
+    <a href="">
+        <button class="Youtube" type="button"> 
+            Youtube
+        </button>
+        </a>
+        <a href="">
+            <button class="Concerts" type="button"> 
+                Concerts
+            </button>
+            </a>
+            <a href="">
+                <button class="Series" type="button"> 
+                    Series
+                </button>
+                </a>
+                <a href="">
+                    <button class="Documentary" type="button"> 
+                        Documentary
+                    </button>
+                    </a>
+</div>
+</body>
+</html>

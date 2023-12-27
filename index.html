@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT.IT</title>
+    
+    <style>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .bounce-dot {
+            color: #ff6a00;
+            animation: bounce 2s infinite;
+            display: inline-block; 
+            text-shadow: 0 0 10px rgba(255, 106, 0, 0.8); 
+        }
+        body{
+            height: 100vh; 
+            background: linear-gradient(to bottom, #800080, #FF0000); 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;}
+
+        h1{
+            font-size: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: Verdana, sans-serif;
+            margin-top: 50px; 
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }}
+        .Ineedtools{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 45%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 70px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 50vh;
+            font-family: 'Courier New', monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)}    
+            
+           .Ineedtools:hover{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 45%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 70px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 50vh;
+            font-family: 'Courier New', monospace;}    
+
+           .Ineedinspirations{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            width: 45%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 70px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 50vh;
+            font-family: 'Courier New', monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)}    
+
+           .Ineedinspirations:hover{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 45%; 
+            margin: 1.5%; 
+            padding: 10px; 
+            font-size: 70px;
+            cursor: pointer;          
+            box-sizing: border-box;
+            display: inline-block;
+            height: 50vh;
+            font-family: 'Courier New', monospace;}    
+
+            .free{
+                color: green;
+                font-weight: bold;}
+
+                
+</style>
+
+</head>
+<body>
+<div>
+    <h1> EDIT<span class="bounce-dot">.</span>IT </h1>
+</div>
+   <div class="Botoes">
+    <a href="Ineedtools.html">
+    <button class="Ineedtools" type="button"> 
+        I NEED <span class="free"> FREE </span> TOOLS
+    </button>
+    </a>
+    <a href="ineedinspirations.html">
+    <button class="Ineedinspirations" type="button"> 
+        I NEED INSPIRATIONS
+    </button>
+    </a>
+</div>
+</body>
+</html>
